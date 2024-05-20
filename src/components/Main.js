@@ -18,11 +18,11 @@ export default function Main() {
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">La guitarra de tus sueños</span>
-                    <span className="block text-white">te está esperando.</span>
+                    <span className="block text-white">El mejor meme</span>
+                    <span className="block text-white">Decorando tu hogar</span>
                   </h1>
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl">
-                    Contamos con el catálogo de guitarras más amplio de toda Latinoamérica. Entregamos en todos los lugares del continente.
+                   Decora tu habitación, sala o baño con las pinturas mas exoticas y alegres. ¡Basadas en memes!
                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none flex justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid  sm:gap-5">

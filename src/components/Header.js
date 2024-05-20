@@ -109,7 +109,7 @@ export default function Header() {
                   <div className="ml-4 mr-4 flex lg:ml-0">
 
                     <img className="h-8 w-auto" src={GuitarLogo} alt="Guitar LATAM" />
-                    <span className="font-medium italic mt-1">GUITARWORLD</span>
+                    <span className="font-medium italic mt-1">MEMEART</span>
 
                   </div>
                 </Link>
@@ -121,7 +121,7 @@ export default function Header() {
                     <div className="flex">
                       <div className="relative flex">
                         <Link to="/catalogo" className="border-transparent text-gray-700 hover:text-gray-800 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px" aria-expanded="false">
-                          Catálogo de Guitarras
+                          Catálogo de Pinturas
                         </Link>
                       </div>
                     </div>

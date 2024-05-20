@@ -15,17 +15,17 @@ export default function Product() {
   const { productId } = params
 
   const ctxProduct = useContext(ProductContext)
-  const { guitar, getGuitar, getPreferenceCheckoutMP } = ctxProduct
-  const { nombre, precio, imagen, color } = guitar[0]
+  const { cuadro, getCuadro, getPreferenceCheckoutMP } = ctxProduct
+  const { nombre, precio, imagen, dimension, descripcion } = cuadro[0]
 
   const ctxUser = useContext(UserContext)
   const { user } = ctxUser
 
   useEffect(() => {
 
-    const fetchGuitar = async () => {
+    const fetchCuadro = async () => {
 
-        const res = await getGuitar(productId)      
+        const res = await getCuadro(productId)      
 
         // MANEJO DE MERCADOPAGO.COM, SOLO SI HAY USUARIO
         if(user){
@@ -35,7 +35,7 @@ export default function Product() {
               {
                   title: res.nombre,
                   quantity: 1,
-                  currency_id: "MXN",
+                  currency_id: "CLP",
                   unit_price: res.precio,
                   picture_url: res.imagen
               }
@@ -56,7 +56,7 @@ export default function Product() {
         }
       }
 
-    fetchGuitar()
+    fetchCuadro()
 
   }, [])
 
@@ -81,8 +81,7 @@ const addCheckout = (id) => {
 
   return (
     <div className="bg-white">
-
-      {guitar.length === 0 ?
+      {cuadro.length === 0 ?
         null :
         (
           <>
@@ -124,11 +123,11 @@ const addCheckout = (id) => {
                   <h2 className="text-3xl font-extrabold text-gray-400">Características</h2>
 
                   <p className="text-base text-gray-900 mt-6">
-                    <b>Precio</b>: ${precio} USD
+                    <b>Precio</b>: ${precio} CLP
                   </p>
 
                   <p className="text-base text-gray-900 mb-6">
-                    <b>Color</b>: { color }
+                    <b>Dimensiones</b>: { dimension }
                   </p>
 
                   {
@@ -149,7 +148,7 @@ const addCheckout = (id) => {
                     <h3 className="sr-only">Description</h3>
 
                     <div className="space-y-6">
-                      <p className="text-base text-gray-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus malesuada odio, a euismod odio sagittis id. Phasellus volutpat dui rutrum ligula dapibus tempor. Curabitur in justo in neque aliquet sagittis quis nec augue. In mattis, lectus non imperdiet imperdiet, est lectus posuere felis, nec fermentum eros dolor ut dolor. Fusce finibus velit vitae cursus vehicula. Donec accumsan tincidunt est pulvinar suscipit. Mauris bibendum id magna at iaculis. Mauris interdum dolor quis tortor porta, et consectetur nisl viverra. Vivamus in congue mi, in feugiat enim. Etiam convallis mauris dui, quis luctus purus consectetur id. Maecenas pharetra vitae tellus fringilla congue. Quisque aliquam eget sem vel aliquam. </p>
+                      <p className="text-base text-gray-900">{ descripcion }</p>
                     </div>
                   </div>
 

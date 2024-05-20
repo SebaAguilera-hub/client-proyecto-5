@@ -6,19 +6,19 @@ import Guitar from './../../assets/pexels-karolina-grabowska-4472061.jpg'
 import ProductContext from './../../context/Product/ProductContext'
 
 
-export default function ListGuitars(props) {
+export default function ListCuadros(props) {
 
   const ctx = useContext(ProductContext)
 
-  const { guitars, getGuitars } = ctx
+  const { cuadros, getCuadros } = ctx
 
   useEffect(() => {
 
-    const fetchGuitars = () => {
-      return getGuitars()
+    const fetchCuadros = () => {
+      return getCuadros()
     }
 
-    fetchGuitars()
+    fetchCuadros()
 
   }, [])
 
@@ -32,7 +32,7 @@ export default function ListGuitars(props) {
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
           {
-            guitars.map((e) => {
+            cuadros.map((e) => {
 
               return (
 

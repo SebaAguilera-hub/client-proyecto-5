@@ -21,7 +21,7 @@ const UserState = (props) => {
     const registerUser = async (dataForm) => {
 
         try {
-            const res = await axiosClient.post("/usuario/crear", dataForm)
+            const res = await axiosClient.post("/usuario/signup", dataForm)
 
             dispatch({
                 type: "REGISTRO_EXITOSO",
@@ -69,7 +69,7 @@ const UserState = (props) => {
         
         try {
 
-            const respuesta = await axiosClient.post("/usuario/iniciar-sesion", dataForm)
+            const respuesta = await axiosClient.post("/usuario/login", dataForm)
 
             dispatch({
                 type: "LOGIN_EXITOSO",
