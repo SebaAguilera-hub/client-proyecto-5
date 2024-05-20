@@ -62,7 +62,7 @@ export default function Product() {
 
 const addCheckout = (id) => {
   const mp = new window.MercadoPago(process.env.REACT_APP_MERCADO_PAGO_PUBLIC_KEY, {
-    locale: "es-MX"
+    locale: "es-CL"
   })
 
   mp.checkout({
