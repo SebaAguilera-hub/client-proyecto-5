@@ -41,7 +41,7 @@ export default function Product() {
               }
           ],
           payer: {
-              name: user.name,
+              name: user.name, //name
               email: user.email        
           }
         })
