@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from '../context/User/UserContext'
 
-import GuitarLogo from './../assets/guitarlogo.svg'
+import ArtLogo from '../assets/logo.png'
 
 import LayoutContext from './../context/Layout/LayoutContext'
 import Sidebar from './Sidebar'
@@ -40,7 +40,7 @@ export default function Header() {
 
                   <div className="flow-root" onClick={toggleMobileSidebar}>
                     <Link to="/">
-                      <img className="h-8 w-auto" src={GuitarLogo} alt="Guitar LATAM" />
+                      <img className="h-8 w-auto" src={ArtLogo} alt="Guitar LATAM" />
                     </Link>
                   </div>
 
@@ -108,7 +108,7 @@ export default function Header() {
                 <Link to="/">
                   <div className="ml-4 mr-4 flex lg:ml-0">
 
-                    <img className="h-8 w-auto" src={GuitarLogo} alt="Guitar LATAM" />
+                    <img className="h-8 w-auto rounded-md mr-1" src={ArtLogo} alt="Guitar LATAM" />
                     <span className="font-medium italic mt-1">MEMEART</span>
 
                   </div>
