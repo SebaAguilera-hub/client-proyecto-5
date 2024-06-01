@@ -151,10 +151,10 @@ const addCheckout = (id) => {
                       <p className="text-base text-gray-900">{ descripcion }</p>
                     </div>
                   </div>
-
+                  {/* 
                   <div className="mt-10">
                     <h3 className="text-sm font-medium text-gray-900">Highlights</h3>
-
+                      
                     <div className="mt-4">
                       <ul role="list" className="pl-4 list-disc text-sm space-y-2">
                         <li className="text-gray-400"><span className="text-gray-600">Feature I</span></li>
@@ -167,9 +167,10 @@ const addCheckout = (id) => {
                       </ul>
                     </div>
                   </div>
+                  */}
 
                   <div className="mt-10">
-                    <h2 className="text-sm font-medium text-gray-900">Details</h2>
+                    <h2 className="text-sm font-medium text-gray-900">Historia</h2>
 
                     <div className="mt-4 space-y-6">
                       <p className="text-sm text-gray-600">In a consectetur urna. Donec et ipsum turpis. Morbi in lectus vel turpis faucibus feugiat vel ac urna. Suspendisse imperdiet congue dolor, non mattis est porttitor in. Etiam commodo quam vitae congue eleifend. In a felis id velit imperdiet varius a at turpis. Nullam porta, ligula quis aliquet iaculis, lectus magna faucibus odio, eget venenatis risus lectus vitae sem.</p>
